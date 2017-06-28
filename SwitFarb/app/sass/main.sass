@@ -1,0 +1,93 @@
+@import "bourbon"
+@import "vars"
+@import "libs"
+
+
+
+.sect1
+  .info
+    font-size: 18px
+    text-align: center
+    margin-bottom: 10px
+  .photo
+    column-count: 2
+    column-width: 400px
+    column-gap: 30px
+    .photo-item
+      margin: 25px auto auto
+
+//CONTACTS
+
+.sect2 .address-item
+  display: flex
+  flex-wrap: nowrap
+  margin-top: 20px
+  &:hover
+    color: #024308
+  .text
+    margin-right: auto
+.links
+  display: flex
+  *
+    margin: auto
+    text-decoration: none
+    color: #000
+    &:hover
+      color: #024308
+
+//PRODUCTION
+
+.sect3
+  .container
+    .logos
+      text-align: center
+      .image
+        max-width: 13%
+        margin: 20px 7px
+        display: inline-block
+    .more
+      text-align: center
+      font-size: 24px
+
+      &:hover
+        color: #024308
+      &:visited
+        color: #000
+      &:active
+        color: #024308
+
+//ABOUT US
+
+.sect4
+  .info
+    font-size: 18px
+  .photo
+    margin: auto
+    max-width: 420px
+//UP BUTTON
+
+.upbutton
+  font-size: 45px
+  color: #fff
+  position: fixed
+  right: 0
+  margin-right: 10px
+  margin-bottom: 10px
+  width: 6%
+  text-align: center
+  bottom: 0
+  .fa
+    opacity: 0.8
+  &:hover
+    opacity: 0.7
+    transition: all 0.5s ease
+    background-color: #d3d3d3
+    color: #ff0000
+    
+
+
+
+
+
+
+@import "media"
