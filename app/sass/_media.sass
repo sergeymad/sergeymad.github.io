@@ -5,63 +5,91 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px)
-  .sect2 .owl-carousel .fa-chevron-right
-    right: 0
-  .sect2 .owl-carousel .fa-chevron-left
-    left: 0
+	/**/
+@media only screen and (max-width: 1112px)
+  .upbutton
+    color: black
+    &:hover
+      background-color: #808080
 
-@media only screen and (max-width: 930px)
-  .sect4 .item
-    .info
-      width: 320px
-      h4
-        font-size: 40px
-      p
-        font-size: 12px
-      ul
-        font-size: 12px
-                          
-@media only screen and (max-width: 869px)
-  .sect4 .item
-    .car
-      margin: 0 auto
-      max-width: 480px
-    .info
-      margin: 20px auto
-      width: 60%
 
 @media only screen and (max-width: 992px)
-  .sect4 .item
-    flex-wrap: wrap
+  .sect1 .photo
+    column-gap: 20px
+    padding: 25px 50px
+    .photo-item
+      max-width: 350px
+  .upbutton
+    width: 7%
+  
+  .sect2
+    .map
+      margin: auto
+      *
+        width: 450px
+        height: 450px
+
+
+@media only screen and (max-width: 820px)
+  .sect1
+    .photo
+      padding: 0px
+      .photo-item
+        max-width: 500px
+  .upbutton
+    width: 8%
+    
+  .sect2
+    .map *
+      width: 400px
+      height: 400px
+
+  .sect3
+    .container
+      .logos
+        padding: 25px 10px
+        .image
+          max-width: 15%
 
 @media only screen and (max-width: 768px)
-  /* Extra Small Devices, Phones */
-
-@media only screen and (max-width: 588px)
-  .heading
-    font-size: 45px
-
-@media only screen and (max-width: 480px)
-  .sect2 .owl-carousel .fa
-    top: 95%
-    font-size: 60px
-    z-index: 10
-  .sect2 .owl-carousel .fa-chevron-right
-    right: 30%
-  .sect2 .owl-carousel .fa-chevron-left
-    left: 30%
-  .heading
-    font-size: 35px
-  .sect2 .owl-carousel .item
-    width: 300px
-  .sect3 .content ul li
-    width: 310px
-  .sect4 .item
-    .car
-      max-width: 320px
+  .sect1
+    .photo
+      .photo-item
+        max-width: 350px
     .info
-      width: 80%
-@media only screen and (max-width: 320px)
+      p
+        font-size: 16px
+  .sect2
+    .map *
+      width: 250px
+      height: 250px
+    .text
+      font-size: 14px
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+
+  .sect1 .photo
+    .photo-item
+      max-width: 225px
+  .upbutton
+    width: 15%
+  .sect2
+    .map
+      display: none
+
+  .sect3
+    .container
+      .logos
+        padding: 25px 20px
+        .image
+          max-width: 20%
+
+@media only screen and (max-width : 350px)
+  .sect1 .photo
+    .photo-item
+      max-width: 200px
+
+@media only screen and (max-width : 320px)
 	/**/
 
 

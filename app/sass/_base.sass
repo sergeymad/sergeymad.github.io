@@ -19,59 +19,56 @@
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
-	color: #000
+	color: #666
 body input:required:valid,
 body textarea:required:valid
-	color: #000
-
-html, body
-	height: 100%
+	color: #666
 
 body
-	font-size: 16px
 	margin: 0
+	background-attachment: fixed
+	padding: 0
+	font-size: 16px
 	min-width: 320px
 	position: relative
-	line-height: 1.75
+	line-height: 1.6
 	font-family: $default-font
 	overflow-x: hidden
-	opacity: 1
-a
-	transition: all .3s ease
-	text-decoration: none
-	color: #a69999
-	&:hover,:active,:focus,:visited
-		text-decoration: none
-		color: $accent
-h1
-	font-size: 40px
-h1,h2,h3
-	text-align: center
-h1,h2,h3,h4,h5,h6
-	color: #ffffff
+
+p
 	margin: 0
-	padding: 0
+	color: #000
+	font-size: 18px
 
-ul
-	padding: 0
-	li
-		list-style-type: none
-span
-	color: $accent
-
+a
+  text-decoration: none
 
 img
-	display: block
 	width: 100%
 	height: auto
+	display: block
+
+h1
+	margin: 0
+	background-color: #393939
+	color: transparent
+	text-shadow: 0 2px 4px rgb(255,255,255)
+	font-size: 70px
+
+h1,h2,h3,h4,h5,h6
+	text-transform: uppercase
+	text-align: center
+	-webkit-background-clip: text
+	font-family: ArialNarrowBold, sans-serif
+
+ul
+	margin: 0
+	li
+		list-style-type: none
+		display: inline-block
 
 .container
-	max-width: 1170px
+	max-width: 960px
 	margin: 0 auto
-
-.container_items
-	max-width: 1600px
-	margin: 0 auto
-
-
+	background-color: #fff
 

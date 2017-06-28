@@ -2,190 +2,101 @@
 @import "vars"
 @import "libs"
 
-//Custom styles here
-.sect-logo
-  max-height: 62px
-  max-width: 62px
-  margin: 90px auto 50px
-.sub-heading
-  text-transform: uppercase
-  color: $light_grey
-  font-size: 14px
-  letter-spacing: 5px
-.heading
-  font-size: 61px
-  color: $grey
-.sect2
-  overflow-x: hidden
-  text-align: center
-  padding-bottom: 25px
-  position: relative
-  .owl-carousel
-    text-align: center
-    .item
-      width: 360px
-      margin: 20px auto 70px
-      padding-top: 8px
-      font-family: "Times New Roman"
-      &:hover
-        transition: all 0.5s ease
-        box-shadow: 0 0 15px $light_grey
-      .portrait
-        max-width: 255px
-        max-height: 480px
-        margin-left: auto
-        margin-right: auto
-      .name
-        font-size: 27px
-        color: $grey
-      .subject
-        font-size: 19px
-        color: $light_grey
-      .socials
-        white-space: nowrap
-        div
-          max-height: 23px
-          max-width: 23px
-          margin-top: 30px
-          margin-bottom: 27px
-          display: inline-block
-        div+div
-          margin-left: 35px
-    .fa
-      position: absolute
-      top: 50%
-      font-size: 85px
-      color: $accent
-      bottom: 50%
-    .fa-chevron-right
-      right: -4%
-    .fa-chevron-left
-      left: -4%
+.sect1 .container
+  padding-bottom: 30px
+.sect1
+  .info
+    font-size: 18px
+    padding: 25px 50px
+  .photo
+    column-count: 2
+    column-width: 400px
+    column-gap: 30px
+    padding: 25px 50px
+    .photo-item
+      margin: 25px auto auto
 
-.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled
-  display: block
+//CONTACTS
+
+.sect2 .address-item
+  display: flex
+  flex-wrap: nowrap
+  margin-top: 20px
+  &:hover
+    color: #024308
+  .text
+    margin-right: auto
+.address
+  padding: 25px 50px
+.links
+  display: flex
+  *
+    margin: auto
+    text-decoration: none
+    color: #000
+    &:hover
+      color: #024308
+
+//PRODUCTION
 
 .sect3
-  text-align: center
-  padding-top: 50px
-  .item
-    padding-bottom: 15px
-  .content
-    ul
-      display: flex
-      flex-wrap: wrap
-
-      li
-        width: 360px
-        height: 250px
-        box-shadow: 0 0 10px $light_grey
-        margin: 20px auto
-        &:hover
-          transition: all 0.5s ease
-          img
-            display: none
-          .sience-logo
-            margin: 0
-          .submenu ul
-            display: block
-        p
-          color: $grey
-          margin-top: 30px
-          font-size: 27px
-          font-family: "Times New Roman"
-          line-height: 0.98
-        .sience-logo
-          max-height: 70px
-          max-width: 48px
-          margin: 25px auto 70px auto
-    .submenu ul
-      display: none
-      margin-bottom: 48px
-      li
-        height: 40px
-        margin: 5px auto 0px auto
-        display: flex
-        width: 280px
-        box-shadow: 1px 1px 3px $light_grey
-        &:last-child .text::before
-          content: ""
-          background-color: $light_grey
-          height: 2px
-          width: 100%
-          position: absolute
-          bottom: 2px
-        .text
-          margin: auto auto auto 10px
-          position: relative
-        &:hover
-          background-color: #f2f2f2
-          transition: all 0.5s ease
-          transform: none
-
-.sect4
-  text-align: center
-  .second-carousel
-    margin-top: 75px
-  .item
-    display: flex
-    flex-wrap: nowrap
-    padding: 10px
-    p
-      font-size: 17px
-      line-height: 19px
-      a
-        color: $accent
-    h4
-      color: $grey
-      font-size: 48px
-      text-align: left
-      text-indent: 20px
-      &:first-letter
-        color: $accent
-    h5
+  .container
+    .logos
+      padding: 25px 50px
+      text-align: center
+      .image
+        max-width: 13%
+        margin: 20px 7px
+        display: inline-block
+    .more
+      text-align: center
       font-size: 24px
-      color: $grey
-      text-align: left
-      text-indent: 20px
-    .info
-      box-shadow: 0 0 10px $light_grey
-      width: 360px
-      margin-left: 30px
-      .piece
-        margin: 0
-        padding: 5px 0
-        border-bottom: 1px solid $light_grey
-    ul
-      margin: 0
-      font-size: 18px
-      text-align: left
-      li
-        position: relative
-        padding-left: 20px
-        text-indent: 20px
+      padding-bottom: 30px
+      &:hover
         a
-          color: $grey
-        &:hover
-          background-color: #f4f4f4
-          transition: all 0.5s ease
-          .fa
-            color: $accent
-            transition: all 0.5s ease
-        .fa
-          position: absolute
-          top: 15%
-          left: 0%
-    .car
-      flex: 1 0 500px
-      max-width: 745px
-      height: auto
-      .car_item
-        transition: all 0.5s ease
-  .second-carousel .owl-nav
-    display: none
-.sect4 .item #links
-  border: none
-.active
-  display: block
+          color: #000
+      &:visited
+        a
+          color: #000
+      &:active
+        a
+          color: #024308
+
+//ABOUT US
+.sect4 .container
+  padding-bottom: 30px
+.sect4
+  .info
+    font-size: 18px
+    padding: 25px 50px
+  .photo
+    margin: auto
+    max-width: 420px
+
+//UP BUTTON
+
+.upbutton
+  font-size: 45px
+  color: #fff
+  position: fixed
+  right: 0
+  margin-right: 10px
+  margin-bottom: 10px
+  width: 6%
+  text-align: center
+  bottom: 0
+  .fa
+    opacity: 0.8
+  &:hover
+    opacity: 0.7
+    transition: all 0.5s ease
+    background-color: #d3d3d3
+    color: #ff0000
+    
+
+
+
+
+
 
 @import "media"
