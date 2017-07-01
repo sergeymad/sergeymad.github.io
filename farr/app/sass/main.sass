@@ -1,7 +1,8 @@
 @import "bourbon"
 @import "vars"
 @import "libs"
-
+header
+  overflow-x: hidden
 .investments
   text-align: center
   margin-bottom: 45px
@@ -146,7 +147,7 @@
     li
       margin: auto
       .image
-        max-width: 270px
+        max-width: 100%
 
 .consultation
   text-align: center
@@ -172,7 +173,7 @@
     margin: auto
   .forms
     position: absolute
-    top: 50%
+    top: 43%
     left: 0%
     right: 0%
     margin: auto
@@ -183,14 +184,13 @@
       background-color: #a7cf39
       color: #fff
       border-radius: 11px 11px 11px 11px
-      padding: 10px 35px
       height: 38px
       white-space: nowrap
       &:hover
         background-color: #fff
         color: #000
         transition: all 0.5s ease
-  .footer
+  .foot
     display: flex
     position: absolute
     left: 0%
@@ -198,6 +198,7 @@
     text-align: left
     right: 0%
     bottom: 8%
+    overflow-x: hidden
     *
       margin: auto
     .contacts
