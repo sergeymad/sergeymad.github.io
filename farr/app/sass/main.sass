@@ -1,8 +1,7 @@
 @import "bourbon"
 @import "vars"
 @import "libs"
-header
-  overflow-x: hidden
+
 .investments
   text-align: center
   margin-bottom: 45px
@@ -13,97 +12,113 @@ header
   ul
     display: flex
     flex-wrap: wrap
+    justify-content: center
+    align-content: center
     margin-top: 35px
     margin-bottom: 35px
     li
-      margin: auto
       width: 240px
+      margin: 0 auto 50px
       div
         border-bottom: solid $accent 1px
         border-top: solid $accent 1px
+        color: #555
         width: 100%
-        height: 80px
-        line-height: 75px
+        padding: 20px 0
         h4
           display: inline-block
-          vertical-align: middle
+          font-family: Cleanvertising, sans-serif
+          font-size: 23px
+          vertical-align: sub
       .description
         color: $grey
         span
-          display: inline-block
-          vertical-align: middle
-          font-size: 20px
-.slogan
-  display: flex
-  position: relative
-  align-content: flex-end
-  .section-bg
-    position: absolute
+          display: block
+          font-family: Cleanvertising, sans-serif
+          font-weight: 600
+          height: 22px
+        .sect3_bold
+          font-size: 24px
+          font-weight: 800
+          font-family: sans-serif
+          line-height: 20px
+      p
+        color: #000
+
+.sect2
+  padding: 70px 0
+  background-color: #fff
   .text
-    z-index: 10
     font-size: 18px
-    margin: 30% auto auto
+    margin: 30% auto 5%
     color: #fff
     text-align: center
-    width: 820px
     p
       margin-bottom: 15px
+      font-size: 21px
     span
-      font-size: 27px
+      font-size: 30px
 
 .support
   text-align: center
+  font-family: Cleanvertising, sans-serif
   margin-bottom: 70px
   h3
     text-transform: uppercase
     text-align: center
-    margin-top: 180px
+    margin-top: 60px
+    font-family: CleanvertisingBold, sans-serif
     color: $accent
   ul
     display: flex
     flex-wrap: wrap
     margin-top: 75px
+    justify-content: center
     li
-      margin: auto 35px 65px auto
+      font-size: 20px
+      width: 200px
       display: flex
+      max-height: 70px
+      margin: 0 35px 80px
       .text
         margin: auto auto auto 12px
         display: inline-block
         color: #000
       .circle
         display: inline-block
-        width: 70px
+        min-width: 70px
+        max-width: 70px
   .info
     text-align: center
+    font-family: CleanvertisingBold, sans-serif
+    color: #555
+    font-size: 22px
     margin: auto
     margin-bottom: 35px
     max-width: 780px
 
-.clubs
-  position: relative
-  .section-bg
-    position: absolute
-
-.education
-  position: relative
-  .text
-    position: absolute
-    max-width: 450px
-    text-align: center
-    bottom: 10%
-    left: 10%
-    color: #fff
-    font-size: 30px
-  .pictures
+.sect4
+  padding: 590px 0 100px
+  .education
     display: flex
-    position: absolute
-    bottom: 8%
-    right: 10%
-    .item
-      width: 150px
+    align-items: center
+    flex-wrap: wrap
+    justify-content: center
+    align-content: center
+    .text
+      max-width: 450px
+      text-align: center
+      color: #fff
+      font-size: 30px
       margin: auto
-      margin-left: 20px
-      max-height: 250px
+    .pictures
+      display: flex
+      flex: 0 0 300px
+      align-items: center
+      .item
+        max-width: 100px
+        margin-left: 20px
+        max-height: 250px
 
 .sect5
   .clubs
@@ -113,94 +128,99 @@ header
     .text
       max-width: 400px
       text-align: center
+      margin: auto
+      color: #555
     .pictures
       display: flex
+      justify-content: center
       flex-wrap: wrap
       max-width: 600px
       .item
         margin: 0 35px
+        display: flex
+        justify-content: center
+        align-items: center
         width: 80px
 
-.franchise
-  position: relative
+.sect6
+  padding: 200px 0px 190px
   .text
-    position: absolute
     font-size: 30px
+    margin-bottom: 75px
     color: #fff
     text-transform: uppercase
     text-align: center
-    top: 20%
-    left: 0
-    right: 0
   .video
-    position: absolute
-    left: 0
-    right: 0
     text-align: center
-    bottom: 15%
+    max-width: 900px
+    margin: 0 auto
+    iframe
+      display: block
+      width: 100%
+      margin: 0 auto
+      min-height: 500px
+
 
 .portraits
   text-align: center
   margin: 35px
   ul
     display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-content: center
     li
       margin: auto
       .image
-        max-width: 100%
+        max-width: 265px
+        font-size: 30px
+        margin: auto
+        p
+          font-size: 30px
+          color: #555
 
-.consultation
+footer
   text-align: center
-  position: relative
+  padding: 160px 0 35px
   .heading
-    position: absolute
     font-size: 30px
     color: #fff
     text-transform: uppercase
     text-align: center
-    top: 15%
-    left: 0%
-    right: 0%
-    margin: auto
+    margin: auto auto 60px
   .text
-    position: absolute
     color: #fff
-    width: 600px
     text-align: center
-    top: 30%
-    left: 0%
-    right: 0%
-    margin: auto
+    margin: auto auto 35px
   .forms
-    position: absolute
-    top: 43%
-    left: 0%
-    right: 0%
-    margin: auto
-    display: flex
-    justify-content: center
-    flex-wrap: wrap
+    margin: auto auto 270px
+    form
+      display: flex
+      justify-content: space-around
+      align-content: center
+      flex-wrap: wrap
+      input
+        margin-bottom: 20px
     .button-rev
       background-color: #a7cf39
       color: #fff
+      display: block
       border-radius: 11px 11px 11px 11px
+      cursor: pointer
       height: 38px
       white-space: nowrap
       &:hover
         background-color: #fff
-        color: #000
+        color: #dadada
         transition: all 0.5s ease
   .foot
     display: flex
-    position: absolute
-    left: 0%
     color: #fff
+    margin-bottom: 65px
     text-align: left
-    right: 0%
-    bottom: 8%
     overflow-x: hidden
-    *
-      margin: auto
+    >*
+      margin: 0 100px
     .contacts
       font-size: 10px
       a
@@ -209,5 +229,10 @@ header
         max-width: 60px
         margin-left: 0
         margin-bottom: 10px
+  .scriptum
+    text-align: left
+    margin: 0 100px
+    font-size: 10px
+    color: #b8b5b5
 @import "media"
 
