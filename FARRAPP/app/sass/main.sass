@@ -1,0 +1,269 @@
+@import "bourbon"
+@import "vars"
+@import "libs"
+
+.investments
+  text-align: center
+  margin-bottom: 45px
+  h3
+    text-transform: uppercase
+    margin-top: 40px
+    color: $accent
+  ul
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-content: center
+    margin-top: 35px
+    margin-bottom: 35px
+    li
+      width: 240px
+      margin: 0 auto 50px
+      div
+        border-bottom: solid $accent 1px
+        border-top: solid $accent 1px
+        color: #555
+        width: 100%
+        padding: 20px 0
+        h4
+          display: inline-block
+          font-family: Cleanvertising, sans-serif
+          font-size: 23px
+          vertical-align: sub
+      .description
+        color: $grey
+        span
+          display: block
+          font-family: Cleanvertising, sans-serif
+          font-weight: 600
+          height: 22px
+        .sect3_bold
+          font-size: 24px
+          font-weight: 800
+          font-family: sans-serif
+          line-height: 20px
+      p
+        color: #000
+
+.sect2
+  padding: 70px 0
+  background-color: #fff
+  .text
+    font-size: 18px
+    margin: 30% auto 5%
+    color: #fff
+    text-align: center
+    p
+      margin-bottom: 15px
+      font-size: 21px
+    span
+      font-size: 30px
+
+.support
+  text-align: center
+  font-family: Cleanvertising, sans-serif
+  margin-bottom: 70px
+  h3
+    text-transform: uppercase
+    text-align: center
+    margin-top: 60px
+    font-family: CleanvertisingBold, sans-serif
+    color: $accent
+  .items
+    display: flex
+    flex-wrap: wrap
+    margin-top: 75px
+    justify-content: center
+    .item
+      align-items: center
+      display: flex
+      font-size: 20px
+      flex: 0 0 280px
+      margin-bottom: 30px
+      .text
+        position: relative
+        margin: auto 20px auto 12px
+        display: inline-block
+        p
+          font-size: 20px
+          color: #000000
+      .circle
+        margin: 20px 0 30px 20px
+        min-width: 70px
+        max-width: 70px
+      &:hover
+        transition: all .4s ease
+        background-color: #dadada
+  .info
+    text-align: center
+    font-family: CleanvertisingBold, sans-serif
+    color: #555
+    font-size: 22px
+    margin: auto
+    margin-bottom: 35px
+    max-width: 780px
+
+.sect4
+  padding: 590px 0 100px
+  .education
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    justify-content: center
+    align-content: center
+    .text
+      max-width: 450px
+      text-align: center
+      color: #fff
+      font-size: 30px
+      margin: auto
+    .pictures
+      display: flex
+      flex: 0 0 300px
+      align-items: center
+      margin: auto
+      .item
+        max-width: 100px
+        margin-left: 20px
+        max-height: 250px
+
+.sect5
+  .clubs
+    display: flex
+    font-size: 30px
+    margin: 35px 0
+    .text
+      max-width: 400px
+      text-align: center
+      margin: auto
+      color: #555
+    .pictures
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+      max-width: 600px
+      .item
+        margin: 10px 35px
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 80px
+
+.sect6
+  padding: 200px 0 190px
+  .text
+    font-size: 30px
+    margin-bottom: 75px
+    color: #fff
+    text-transform: uppercase
+    text-align: center
+  .video
+    text-align: center
+    margin: 0 auto
+    iframe
+      display: block
+      max-width: 900px
+      margin: 0 auto
+      min-height: 500px
+
+
+.portraits
+  text-align: center
+  margin: 35px
+  ul
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-content: center
+    li
+      margin: auto
+      .image
+        max-width: 265px
+        font-size: 30px
+        margin: auto
+        transition: all .5s ease
+        padding: 5px 10px
+        &:hover
+          background-color: #dadada
+          cursor: pointer
+        p
+          font-size: 30px
+          color: #555
+
+footer
+  text-align: center
+  padding: 160px 0 35px
+  .heading
+    font-size: 30px
+    color: #fff
+    text-transform: uppercase
+    text-align: center
+    margin: auto auto 60px
+  .text
+    color: #fff
+    text-align: center
+    margin: auto auto 35px
+  .forms
+    margin: auto auto 270px
+    form
+      display: flex
+      justify-content: space-around
+      align-content: center
+      flex-wrap: wrap
+      input
+        margin-bottom: 20px
+    .button-rev
+      background-color: #a7cf39
+      color: #fff
+      display: block
+      border-radius: 11px 11px 11px 11px
+      cursor: pointer
+      height: 38px
+      white-space: nowrap
+      &:hover
+        background-color: #fff
+        color: #dadada
+        transition: all 0.5s ease
+  .foot
+    display: flex
+    color: #fff
+    margin-bottom: 65px
+    text-align: left
+    overflow-x: hidden
+    >*
+      margin: 0 100px
+    .contacts
+      font-size: 10px
+      a
+        font-size: 10px
+      .image
+        max-width: 60px
+        margin-left: 0
+        margin-bottom: 10px
+  .scriptum
+    text-align: left
+    margin: 0 100px
+    font-size: 10px
+    color: #b8b5b5
+
+.upbutton
+  font-size: 45px
+  color: #000
+  position: fixed
+  right: 0
+  margin-right: 5px
+  margin-bottom: 10px
+  width: 50px
+  text-align: center
+  bottom: 0
+  img
+    opacity: 0.8
+  &:hover
+    opacity: 0.7
+    transition: all 0.5s ease
+    background-color: #d3d3d3
+    color: #ff0000
+
+
+@import "media"
+
