@@ -71,5 +71,13 @@ $(".support ul li").equalHeights();
 
         // Kick off one resize to fix all videos on page load
     }).resize();
+
+
+    //SCROLL TO ELEMENT
+    $('.go_to').click( function(){
+        var scroll_el = $(this).attr('href');
+        $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 600);
+        return false;
+    });
     //resize video
 });
