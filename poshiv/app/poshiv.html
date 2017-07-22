@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Title</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!-- Template Basic Images End -->
+
+    <!-- Bootstrap (latest) Grid Styles Only -->
+
+
+    <!-- Header CSS (first screen styles from header.min.css) - inserted in the build of the project -->
+    <style>@
+    @include ('header.min.css')</style>
+
+    <!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+    <script>!function (e) {
+        "use strict";
+        function t(e, t, n) {
+            e.addEventListener ? e.addEventListener(t, n, !1) : e.attachEvent && e.attachEvent("on" + t, n)
+        };
+        function n(t, n) {
+            return e.localStorage && localStorage[t + "_content"] && localStorage[t + "_file"] === n
+        };
+        function a(t, a) {
+            if (e.localStorage && e.XMLHttpRequest)n(t, a) ? o(localStorage[t + "_content"]) : l(t, a); else {
+                var s = r.createElement("link");
+                s.href = a, s.id = t, s.rel = "stylesheet", s.type = "text/css", r.getElementsByTagName("head")[0].appendChild(s), r.cookie = t
+            }
+        }
+
+        function l(e, t) {
+            var n = new XMLHttpRequest;
+            n.open("GET", t, !0), n.onreadystatechange = function () {
+                4 === n.readyState && 200 === n.status && (o(n.responseText), localStorage[e + "_content"] = n.responseText, localStorage[e + "_file"] = t)
+            }, n.send()
+        }
+
+        function o(e) {
+            var t = r.createElement("style");
+            t.setAttribute("type", "text/css"), r.getElementsByTagName("head")[0].appendChild(t), t.styleSheet ? t.styleSheet.cssText = e : t.innerHTML = e
+        }
+
+        var r = e.document;
+        e.loadCSS = function (e, t, n) {
+            var a, l = r.createElement("link");
+            if (t)a = t; else {
+                var o;
+                o = r.querySelectorAll ? r.querySelectorAll("style,link[rel=stylesheet],script") : (r.body || r.getElementsByTagName("head")[0]).childNodes, a = o[o.length - 1]
+            }
+            var s = r.styleSheets;
+            l.rel = "stylesheet", l.href = e, l.media = "only x", a.parentNode.insertBefore(l, t ? a : a.nextSibling);
+            var c = function (e) {
+                for (var t = l.href, n = s.length; n--;)if (s[n].href === t)return e();
+                setTimeout(function () {
+                    c(e)
+                })
+            };
+            return l.onloadcssdefined = c, c(function () {
+                l.media = n || "all"
+            }), l
+        }, e.loadLocalStorageCSS = function (l, o) {
+            n(l, o) || r.cookie.indexOf(l) > -1 ? a(l, o) : t(e, "load", function () {
+                a(l, o)
+            })
+        }
+    }(this);</script>
+
+    <!-- Load Fonts CSS Start -->
+    <script>
+        loadCSS("css/fonts.min.css?ver=1.0.0", false, "all"); // Loading fonts, if the site is located in a subfolder
+        // loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
+    </script>
+    <!-- Load Fonts CSS End -->
+
+    <!-- Load Custom CSS Start -->
+    <!--<Deject>-->
+    <script>loadCSS("header.min.css?ver=1.0.0", false, "all");</script>
+    <!--</Deject>-->
+    <script>loadCSS("css/main.min.css?ver=1.0.0", false, "all");</script>
+    <!-- Load Custom CSS End -->
+
+    <!-- Load Custom CSS Compiled without JS Start -->
+    <noscript>
+        <link rel="stylesheet" href="css/fonts.min.css">
+        <link rel="stylesheet" href="css/main.min.css">
+    </noscript>
+    <!-- Load Custom CSS Compiled without JS End -->
+
+    <!-- Custom Browsers Color Start -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <!-- Custom Browsers Color End -->
+
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <div class="contacts">
+            <div class="logo-wrap"><img src="img/logo.png" alt="alternate"></div>
+            <div class="address item">
+                <ul>
+                    <li class="subitem">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <a href="mailto:poshiv.zindividualnyj@gmail.com">poshiv.zindividualnyj@gmail.com</a></li>
+                    <li class="subitem">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <a href="#">г. Киев, ул. Автозаводская,11</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="numbers item">
+                <ul>
+                    <li class="subitem">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <a href="tel:+380506909927">+38(050) 690-99-27</a>
+                    </li>
+                    <li class="subitem">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <a href="tel:+380988941399">+38(098) 894-13-99</a>
+                    </li>
+                    <li class="subitem">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <a href="tel:+380633921555">+38(063) 392-15-55</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="button">Перезвоните мне</a>
+        </div>
+    </div>
+
+    <div class="menu" style="background-image: url('img/menu-bg.png')">
+        <div class="container">
+            <div class="sandv-wrap">
+                <button class="nav-trigger"><span></span></button>
+            </div>
+            <ul>
+                <li class="item">
+                    <a href="#">главная</a>
+                </li>
+                <li class="item have_sub">
+                    <a href="poshiv.html">индивидуальный пошив</a>
+                    <ul>
+                        <li class="subitem">
+                            <a href="#">Пошив индивидуальный</a>
+                        </li>
+                        <li class="subitem">
+                            <a href="#">пошив одежды</a>
+                        </li>
+                        <li class="subitem">
+                            <a href="#">Спецодежда</a>
+                        </li>
+                        <li class="subitem">
+                            <a href="#">Пошив индивидуальный</a>
+                        </li>
+                        <li class="subitem">
+                            <a href="#">пошив одежды</a>
+                        </li>
+                        <li class="subitem">
+                            <a href="#">Спецодежда</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <a href="#">ресторанный текстиль</a>
+                </li>
+                <li class="item">
+                    <a href="#">спецодежда</a>
+                </li>
+                <li class="item">
+                    <a href="#">ремонт</a>
+                </li>
+                <li class="item">
+                    <a href="#">контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mobile">
+        <div class="mobile-menu">
+            <ul>
+                <li class="item">
+                    <a href="#">главная</a>
+
+                </li>
+                <li class="item have_sub">
+                    <a href="#">индивидуальный пошив</a>
+                    <ul>
+                        <li class="subitem">
+                            <a href="#">Пошив индивидуальный</a>
+                        </li>
+                        <li class="subitem">
+                            <a href="#">пошив одежды</a>
+                        </li>
+                        <li class="subitem">
+                            <a href="#">Спецодежда</a>
+                        </li>
+                        <li class="subitem">
+                            <a href="#">Пошив индивидуальный</a>
+                        </li>
+                        <li class="subitem">
+                            <a href="#">пошив одежды</a>
+                        </li>
+                        <li class="subitem">
+                            <a href="#">Спецодежда</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <a href="#">ресторанный текстиль</a>
+                </li>
+                <li class="item">
+                    <a href="#">спецодежда</a>
+                </li>
+                <li class="item">
+                    <a href="#">ремонт</a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+</header>
+
+<section class="main">
+    <section class="first-screen_poshiv">
+        <div class="container">
+            <div class="welcome">
+                <div class="info">
+                    <h3>Акция по индивидуальному пошиву со скидкой 10%!</h3>
+                    <a href="#" class="button">Узнать подробнее</a>
+                </div>
+
+                <div class="img-wrap">
+                    <img src="img/poshiv_first_screen.png" alt="alternate">
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <section class="sect1">
+        <div class="container">
+            <div class="cost">
+                <div class="item">
+                    <h5></h5>
+
+                    <div class="objects">
+                        <span class="item">ПЛАТЬЕ КОКТЕЙЛЬНОЕ, КОРОТКОЕ   </span>
+                        <span class="item">ПЛАТЬЕ ВЕЧЕРНЕЕ, ДЛИННОЕ  </span>
+                        <span class="item">ПОЛУ-КОРСЕТ, КОРСЕТ ЖЕСТКИЙ</span>
+                        <span class="item">ЮБКА ВЕЧЕРНЯЯ, СВАДЕБНАЯ</span>
+                    </div>
+                    <div class="prices">
+                        <span class="item">700-1500 грн</span>
+                        <span class="item">1000-3500 грн</span>
+                        <span class="item">500-2000 грн</span>
+                        <span class="item">500-1500 грн</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <h5></h5>
+
+                    <div class="objects">
+                        <span class="item">ЮБКА ПРЯМАЯ БЕЗ ПОДКЛАДКИ </span>
+                        <span class="item">ЮБКА ПРЯМАЯ НА ПОДКЛАДКЕ  </span>
+                        <span class="item">ЮБКА МОДЕЛЬНАЯ</span>
+                    </div>
+                    <div class="prices">
+                        <span class="item">300-450 грн</span>
+                        <span class="item">380-550 грн</span>
+                        <span class="item">350-800 грн</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <h5></h5>
+                    <div class="objects">
+                        <span class="item">БРЮКИ БЕЗ ПОДКЛАДКИ</span>
+                        <span class="item">БРЮКИ КЛАССИЧЕСКИЕ, НА ПОДКЛАДКЕ</span>
+                        <span class="item">БРЮКИ МОДЕЛЬНЫЕ</span>
+                    </div>
+                    <div class="prices">
+                        <span class="item">380-500 грн</span>
+                        <span class="item">600-800 грн</span>
+                        <span class="item">800-1000 грн</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <h5></h5>
+                    <div class="objects">
+                        <span class="item">БЛУЗА ЖЕНСКАЯ</span>
+                        <span class="item">МОДЕЛЬНАЯ БЛУЗА</span>
+                    </div>
+                    <div class="prices">
+                        <span class="item">450-750 грн</span>
+                        <span class="item">650-1500 грн</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <h5></h5>
+                    <div class="objects">
+                        <span class="item">ПЛАТЬЕ — ФУТЛЯР</span>
+                        <span class="item">МОДЕЛЬНОЕ ПЛАТЬЕ</span>
+                    </div>
+                    <div class="prices">
+                        <span class="item">600-800 грн</span>
+                        <span class="item">750-1500 грн</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <h5></h5>
+                    <div class="objects">
+                        <span class="item">ЖАКЕТ ЖЕНСКИЙ БЕЗ ПОДКЛАДКИ</span>
+                        <span class="item">ЖАКЕТ ЖЕНСКИЙ НА ПОДКЛАДКЕ</span>
+                        <span class="item">ЖАКЕТ ЖЕНСКИЙ МОДЕЛЬНЫЙ</span>
+                    </div>
+                    <div class="prices">
+                        <span class="item">600-800 грн</span>
+                        <span class="item">750-1500 грн</span>
+                        <span class="item">750-1500 грн</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <h5></h5>
+                    <ul>
+                        <li><span class="object"></span><span class="price"></span></li>
+                        <li><span class="object"></span><span class="price"></span></li>
+                        <li><span class="object"></span><span class="price"></span></li>
+                        <li><span class="object"></span><span class="price"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<footer style="background-image: url('img/footer-bg.png')">
+    <div class="container">
+        <div class="foot_content"><a href="#">&copy;2017 Premier-Poshiv.kiev.ua</a></div>
+    </div>
+</footer>
+<!-- Optimized loading JS Start -->
+<script>var scr = {
+    "scripts": [
+        {"src": "js/libs.min.js", "async": false},
+        {"src": "js/common.js", "async": false}
+    ]
+};
+!function (t, n, r) {
+    "use strict";
+    var c = function (t) {
+        if ("[object Array]" !== Object.prototype.toString.call(t))return !1;
+        for (var r = 0; r < t.length; r++) {
+            var c = n.createElement("script"), e = t[r];
+            c.src = e.src, c.async = e.async, n.body.appendChild(c)
+        }
+        return !0
+    };
+    t.addEventListener ? t.addEventListener("load", function () {
+        c(r.scripts);
+    }, !1) : t.attachEvent ? t.attachEvent("onload", function () {
+        c(r.scripts)
+    }) : t.onload = function () {
+        c(r.scripts)
+    }
+}(window, document, scr);
+</script>
+<!-- Optimized loading JS End -->
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+@import "bourbon"
+@import "sass/vars"
+@import "sass/base"
+
+
+.contacts
+  display: flex
+  justify-content: flex-end
+  color: $default-font-color
+  position: relative
+  flex-wrap: wrap
+  .logo-wrap
+    position: absolute
+    left: 0
+    top: 0
+    z-index: 1
+  .item
+    margin: 20px
+    font-size: 18px
+    li
+      .fa
+        width: 20px
+        margin-right: 10px
+        text-align: center
+        color: $main
+  .button
+    background-color: $accent
+    padding: 10px
+    margin: auto 0 auto 30px
+    text-align: center
+    font-family: $accent-font
+    color: #ffffff
+.menu
+  position: relative
+  text-align: right
+  .item
+    display: inline-block
+    padding: 20px 15px
+    font-size: 18px
+    text-transform: uppercase
+    position: relative
+    &:hover
+      color: $accent
+      text-decoration: underline
+      .subitem
+        color: $default-font-color
+  .item.have_sub
+    position: relative
+    &:hover
+      ul
+        visibility: visible
+        opacity: 1
+    ul
+      position: absolute
+      visibility: hidden
+      opacity: 0
+      height: 0
+      display: flex
+      min-width: 600px
+      flex-wrap: wrap
+      min-height: 80px
+      top: 70px
+      align-content: space-around
+      justify-content: space-around
+      background-color: rgba($main, .8)
+      transition: all 1s ease
+      &:before
+        content: ""
+        width: 0
+        height: 0
+        border-left: 25px solid transparent
+        border-right: 25px solid transparent
+        border-bottom: 22px solid rgba($main, .8)
+        position: absolute
+        top: -22px
+        left: 100px
+      li:hover
+        color: $accent
+        text-decoration: underline
+  .item+.item::before
+    content: ''
+    height: 46px
+    display: block
+    width: 1px
+    position: absolute
+    left: 0
+    top: calc(50% - 23px)
+    background-color: $main
+
+.nav-trigger
+  width: 50px
+  height: 50px
+  display: none
+  position: relative
+  background: transparent
+  border: none
+  vertical-align: middle
+  padding: 10px
+  margin: 0
+  cursor: pointer
+.nav-trigger:focus
+  outline: 0
+.nav-trigger:hover span, .nav-trigger:hover span:before, .nav-trigger:hover span:after
+  background: #000
+.nav-trigger:before
+  content: ''
+  opacity: 0
+  width: 0
+  height: 0
+  border-radius: 50%
+  position: absolute
+  top: 50%
+  left: 50%
+  background: transparent
+  transform: translate(-50%, -50%)
+  transition: all 0.4s ease
+.nav-trigger span
+  display: block
+  position: relative
+.nav-trigger span:before, .nav-trigger span:after
+  content: ''
+  position: absolute
+  left: 0
+.nav-trigger span:before
+  top: -8px
+.nav-trigger span:after
+  bottom: -8px
+.nav-trigger span,
+.nav-trigger span:before,
+.nav-trigger span:after
+  width: 100%
+  height: 4px
+  background: #000
+  transition: all 0.4s ease
+.nav-trigger.is-active:before
+  opacity: 1
+  width: 50px
+  height: 50px
+  background: transparent
+.nav-trigger.is-active span
+  background: transparent
+.nav-trigger.is-active span:before
+  top: 0
+  transform: rotate(225deg)
+  background-color: #000
+.nav-trigger.is-active span:after
+  bottom: 0
+  transform: rotate(-225deg)
+  background-color: #000
+
+.mobile
+  display: none
+.mobile-menu
+  position: fixed
+  display: none
+  font-size: 18px
+  background-color: $main
+  top: 0
+  left: -350px
+  text-transform: uppercase
+  z-index: 2
+  transition: all 0.5s ease
+  &.active
+    left: 0
+  li
+    margin: 20px
+  .item.have_sub
+    ul
+      height: 0
+      overflow: hidden
+      transition: all 1s ease
+    &:hover
+      ul
+        height: 260px
+
+.first-screen
+  background-size: cover
+  text-align: left
+  background-position: left center
+  .welcome
+    height: 100%
+    max-width: 500px
+    background-size: cover
+    background-position-x: right
+    background-repeat: no-repeat
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    font-family: $accent-font
+    h2
+      color: #ffffff
+      max-width: 500px
+      text-transform: uppercase
+      text-align: left
+      font-size: 36px
+      line-height: 38px
+      margin: 30px
+    h3
+      font-size: 36px
+      line-height: 38px
+      max-width: 660px
+      color: $accent
+      margin: 30px
+    .button
+      color: #ffffff
+      font-size: 20px
+      line-height: 22px
+      max-width: 225px
+      padding: 10px
+      text-align: center
+      border: 3px #fff solid
+      margin: 30px auto
+
+.first-screen_poshiv
+  .welcome
+    display: flex
+    font-family: $accent-font
+    justify-content: space-around
+    .info
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      h3
+        font-size: 36px
+        line-height: 38px
+      .button
+        font-size: 20px
+        color: $accent
+        margin: auto
+        padding: 10px
+        line-height: 22px
+        border: 3px $accent solid
+//First screen styles
